@@ -60,9 +60,10 @@ main h2 {
     margin-bottom: 0.75em;
 }
 
-main h3 {
+main .preparation-title {
     color: var(--dark-raspberry);
     margin: 0;
+    font-weight: 700;
 }
 
 main p {
