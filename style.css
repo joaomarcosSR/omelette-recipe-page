@@ -1,0 +1,166 @@
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Young serif';
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Outfit;
+    color: var(--wenge-brown);
+    background-color: var(--eggshell);
+}
+
+main {
+    max-width: 656px;
+    margin: 7.5em auto 6.5em auto;
+    background-color: var(--white);
+    padding: 2.4em;
+    border-radius: 1.5em;
+}
+
+
+main figure {
+    margin: 0;
+}
+
+main figure img {
+    border-radius: 1em;
+}
+
+main h1 {
+    font-family: 'Young serif';
+    color: var(--dark-charcoal);
+    font-size: 2.5em;
+    margin-bottom: 0em;
+    font-weight: 400;
+}
+
+main h2 {
+    font-family: 'Young serif';
+    color: var(--nutmeg);
+    font-weight: 400;
+    font-size: 1.75em;
+    margin-bottom: 0.75em;
+}
+
+main h3 {
+    color: var(--dark-raspberry);
+    margin: 0;
+}
+
+main p {
+    line-height: 1.5em;
+}
+
+main .preparation {
+    background-color: var(--rose-white);
+    padding: 1.6em;
+    border-radius: 1em;
+}
+
+main ul,
+main ol {
+    padding-left: 1.6em;
+    margin: 0;
+
+}
+
+main li {
+    margin: 0.8em 0 0 0;
+    padding-left: 1em;
+}
+
+main li::marker {
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+
+main hr {
+    margin: 1.8em 0 1.6em 0;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+main table {
+    width: 100%;
+    text-align: left;
+}
+
+main table th {
+    width: 50%;
+    border-bottom: 1px solid var(--light-grey);
+    font-weight: 400;
+    padding: 0.9em;
+}
+
+main table td {
+    width: 50%;
+    border-bottom: 1px solid var(--light-grey);
+    font-weight: 700;
+    color: var(--nutmeg);
+    padding: 0.9em;
+}
+
+main table tr:first-child th,
+main table tr:first-child td {
+    padding-top: 0;
+}
+
+main table tr:last-child th,
+main table tr:last-child td {
+    border: none;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        background-color: var(--white);
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+        background-color: var(--white);
+        padding: 0;
+        border-radius: 0;
+    }
+
+    main .recipe {
+        padding: 0 2em;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main figure img {
+        border-radius: 0;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
